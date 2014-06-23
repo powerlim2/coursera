@@ -91,12 +91,13 @@ Run the program for various input sizes *S* and measure the running times. E.g. 
 
 Plot running time T(N) vs. Input Size (N).
 
+![standard](misc/standard.png)
 
 ### Log-Log Plot
 
 Plot running time T(N) vs. Input Size (N) using log-log scale.
 
-![loglog](misc/running_time.png)
+![loglog](misc/loglog.png)
 
 lg(T(N)) = blg(N) + c
 * b = 2.999
