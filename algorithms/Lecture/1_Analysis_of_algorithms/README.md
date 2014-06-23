@@ -99,11 +99,6 @@ Plot running time T(N) vs. Input Size (N) using log-log scale.
 
 ![loglog](misc/loglog.png)
 
-lg(T(N)) = blg(N) + c
-* b = 2.999
-* c = -33.2103
-* T(N) = aN^b, where a = 2^c. ~2^c*N^b
-
 
 ### Regression: Fit straight line through data points: aN^b (power law).
 

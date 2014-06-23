@@ -1,9 +1,18 @@
 # [Introduction to Algorithms & Data Structures](https://class.coursera.org/algs4partI-005)
 
-Date: 2014.06.18
+
+**Date: 2014.06.18 ~ **
 
 A couple of weeks ago, I decided to take algorithm courses offered from Princeton University through Coursera.
-This place is the repository for the course works.
+This place is the repository for the course.
+
+
+## Material
+
+* [Official Textbook](http://www.amazon.com/Algorithms-4th-Edition-Robert-Sedgewick/dp/032157351X)
+* [Official Textbook Online Material](http://algs4.cs.princeton.edu/home/)
+* [Book: Introduction to Algorithms (3rd Edition)](https://drive.google.com/file/d/0B-0-lCFwHeVSNW1KZGJQazVlUUk/edit?usp=sharing)
+* Video Lectures
 
 ## Why do we bother Algorithms? 
 
