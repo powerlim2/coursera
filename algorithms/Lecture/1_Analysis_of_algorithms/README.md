@@ -487,8 +487,8 @@ Ex2) Compares for binary search.
 * Overly pessimistic to focus on worst case?
 * Need better than "to within a constant factor" to predict performance.
 
-## Common Mistake: 'Big-Oh' is not an approximate Model!
-## Approximate Model is 'Tilde' notation.
+### Common Mistake: 'Big-Oh' is not an approximate Model!
+### Approximate Model is 'Tilde' notation.
 
 
 # Memory
