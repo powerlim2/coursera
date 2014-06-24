@@ -9,11 +9,16 @@
       <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/algorithms/assignments/Exercises/1_Union_Find" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/algorithms/Lecture/1_Analysis_of_algorithms" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/algorithms/lib" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/algorithms/Lecture/1_Dynamic_Connectivity" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/algorithms/assignments/Programming_Assignment/1_Percolation" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/algorithms/lib" isTestSource="false" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="algs4" level="project" />
+    <orderEntry type="library" name="stdlib" level="project" />
+    <orderEntry type="library" name="algs4 (2)" level="project" />
+    <orderEntry type="library" name="stdlib (2)" level="project" />
   </component>
 </module>
 

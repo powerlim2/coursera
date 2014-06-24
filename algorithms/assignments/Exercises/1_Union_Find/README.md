@@ -30,7 +30,50 @@ Recall: our quick-find convention for the union operation p-q is to change `id[p
  
 Check out the question1.java
 
+* by hand
+
+![q1](misc/question1_by_hand.jpg)
+
 
 ## Question 2
+
+Give the `id[]` array that results from the following sequence of 9 union
+operations on a set of 10 items using the weighted quick-union algorithm from lecture.
+
+    4-8 3-6 9-7 1-5 3-0 5-9 4-3 3-5 3-2 
+
+Recall: when joining two trees of equal size, our weighted quick union convention is to
+make the root of the second tree point to the root of the first tree. Also, our weighted
+quick union algorithm uses union by size (number of nodes), not union by height.
+
+### Answer
+
+    3 3 3 3 3 1 3 9 4 1
+
+Check out the question2.java
+
+
+## Question 3
+
+Which of the following `id[]` array(s) could be the result of running the weighted quick union
+algorithm on a set of 10 items? Check all that apply.
+
+* 5 5 5 5 5 8 1 1 7 5
+* 2 2 2 1 1 1 8 2 1 1
+* 0 0 9 9 0 0 9 0 6 0 
+* 5 9 2 3 4 5 6 9 8 9 
+* 0 7 0 2 2 4 2 6 8 2 
+
+
+### Answer
+
+    0 0 9 9 0 0 9 0 6 0 
+    5 9 2 3 4 5 6 9 8 9 
+
+Weighted Quick Union determines which one to be child of the other based on the size of nodes.
+Check out the largest nodes and see if that makes sense to you. Can the larger node be a child of smaller node?
+(Prove by Contradiction)
+
+
 
 
