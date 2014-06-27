@@ -39,36 +39,32 @@ public class PercolationStats {
 
     /**
      *
-     * @param trial an array, which contains the result from monte carlo simulation
      * @return sample mean of percolation threshold
      */
-    public static double mean(double[] trial) {
+    public double mean() {
         return StdStats.mean(trial);
     }
 
     /**
-     * @param trial an array, which contains the result from monte carlo simulation
      * @return sample standard deviation of percolation threshold
      */
-    public static double stddev(double[] trial) {
+    public double stddev() {
         return StdStats.stddev(trial);
     }
 
 
     /**
-     * @param trial an array, which contains the result from monte carlo simulation
      * @return lower bound of the 95% confidence interval
      */
-    public static double confIntLo(double[] trial) {
-        return mean(trial) - ((1.96 * stddev(trial)) / Math.sqrt(trial.length));
+    public double confidenceLo() {
+        return mean() - ((1.96 * stddev()) / Math.sqrt(trial.length));
     }
 
     /**
-     * @param trial an array, which contains the result from monte carlo simulation
      * @return upper bound of the 95% confidence interval
      */
-    public static double confIntHi(double[] trial) {
-        return mean(trial) + ((1.96 * stddev(trial)) / Math.sqrt(trial.length));
+    public double confidenceHi() {
+        return mean() + ((1.96 * stddev()) / Math.sqrt(trial.length));
     }
 
     /**
@@ -119,14 +115,13 @@ public class PercolationStats {
         PercolationStats ps = new PercolationStats(size, numTry);
         double e = watch.elapsedTime();
 
-        double[] trial = ps.getTrial();
         StdOut.printf("grid size: %d, number of trials: %d\n", size, numTry);
         StdOut.println("----------------------------------------");
         StdOut.println("\t\t\t\tSUMMARY");
         StdOut.println("========================================");
-        StdOut.printf("* mean: %.3f\n", mean(trial));
-        StdOut.printf("* standard deviation: %.3f\n", stddev(trial));
-        StdOut.printf("* 95%% confidence interval: (%.4f , %.4f)\n", confIntLo(trial), confIntHi(trial));
+        StdOut.printf("* mean: %.3f\n", ps.mean());
+        StdOut.printf("* standard deviation: %.3f\n", ps.stddev());
+        StdOut.printf("* 95%% confidence interval: (%.4f , %.4f)\n", ps.confidenceLo(), ps.confidenceHi());
         StdOut.printf("* Computation Time: %.3f secs\n", e);
     }
 }
