@@ -68,14 +68,6 @@ public class PercolationStats {
     }
 
     /**
-     * Receive the trial array
-     * @return an array, which contains the result from monte carlo simulation
-     */
-    public double[] getTrial() {
-        return trial;
-    }
-
-    /**
      * Input value check
      * @param N the size of the site matrix
      * @param T the number of monte carlo trials
