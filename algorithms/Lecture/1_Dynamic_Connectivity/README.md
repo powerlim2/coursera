@@ -330,7 +330,7 @@ Proposition. `[Hopecroft-Ulman, Tarjan]` Starting from an empty data structure, 
 
 # Union-Find Applications
 
-- Percolation
+- PercolationWithoutWeightedQuickUnion
 - Games (Go, Hex)
 - Dynamic Connectivity
 - Least common ancestor
@@ -341,7 +341,7 @@ Proposition. `[Hopecroft-Ulman, Tarjan]` Starting from an empty data structure, 
 - etc
 
 
-# Percolation
+# PercolationWithoutWeightedQuickUnion
 
 A model of many physical systems:
 1.  N by N grid of sets.
@@ -349,7 +349,7 @@ A model of many physical systems:
 3.  System percolates iff top and bottom are connected by open sites.
 
 
-## Percolation phase transition 
+## PercolationWithoutWeightedQuickUnion phase transition 
 
 When N is large, theory guarantees a sharp threshold p*
 - p > p*: almost certainly percolates

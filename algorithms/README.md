@@ -1,7 +1,7 @@
 # [Introduction to Algorithms & Data Structures](https://class.coursera.org/algs4partI-005)
 
 
-**Date: 2014.06.18 ~ **
+** Date: 2014.06.18 ~ **
 
 A couple of weeks ago, I decided to take algorithm courses offered from Princeton University through Coursera.
 This place is the repository for the course.
@@ -37,3 +37,5 @@ This place is the repository for the course.
 - Lecture: All lectures and notes.
 - Assignments: A directory for my assignments (Java).
 - Funstuffs: My playground for learning algorithms. (Not necessary Java)
+- Data: basic input data provided by the course.
+- Lib: Standard java classes and Algorithm course specific java classes, written by the professors

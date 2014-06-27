@@ -52,6 +52,9 @@ quick union algorithm uses union by size (number of nodes), not union by height.
 
 Check out the question2.java
 
+* by hand
+
+![q1](misc/question2_by_hand.jpg)
 
 ## Question 3
 
@@ -71,7 +74,7 @@ algorithm on a set of 10 items? Check all that apply.
     5 9 2 3 4 5 6 9 8 9 
 
 Weighted Quick Union determines which one to be child of the other based on the size of nodes.
-Check out the largest nodes and see if that makes sense to you. Can the larger node be a child of smaller node?
+Check out the largest nodes and see if that makes sense to you. Can a larger node be a child of a smaller node?
 (Prove by Contradiction)
 
 
