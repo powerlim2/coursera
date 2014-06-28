@@ -18,6 +18,8 @@ public class Percolation {
      * @param N the length of a dimension of the grid
      */
     public Percolation(int N){
+        if (N <= 0) throw new IllegalArgumentException("N must be larger than 0");
+
         side = N;
         area = N * N;
         siteMatrix = new WeightedQuickUnionUF(area + 2);
@@ -32,8 +34,8 @@ public class Percolation {
 
     /**
      * open site (row i, column j) if it is not already
-     * @param i row index (0, N-1)
-     * @param j column index (0, N-1)
+     * @param i row index (1, N)
+     * @param j column index (1, N)
      */
     public void open(int i, int j) {
         checkRange(i, j, side);
@@ -43,7 +45,7 @@ public class Percolation {
         open[site] = true;
 
         // if not top row
-        if (i == 0) {
+        if (i == 1) {
             // connect to top check point in case of top row
             union(site, area);
         } else if (isOpen(i - 1, j)) { // when i != 0
@@ -51,7 +53,7 @@ public class Percolation {
         }
 
         // if not bottom row
-        if (i == side - 1) {
+        if (i == side) {
             // connect to bottom check point in case of bottom row
             union(site, area + 1);
         } else if (isOpen(i + 1, j)) { // when i != side
@@ -59,12 +61,12 @@ public class Percolation {
         }
 
         // if not left border
-        if (j > 0)
+        if (j > 1)
             if (isOpen(i, j - 1))
                 union(getIndex(i, j - 1), site);
 
         // if not right border
-        if (j < side - 1)
+        if (j < side)
             if (isOpen(i, j + 1))
                 union(getIndex(i, j + 1), site);
 
@@ -77,7 +79,7 @@ public class Percolation {
      * @param side length of a dimension of the grid
      */
     private static void checkRange(int i, int j, int side) {
-        if (i < 0 || j < 0 || i > side || j > side)
+        if (i <= 0 || j <= 0 || i > side || j > side)
             throw new IndexOutOfBoundsException();
     }
 
@@ -94,8 +96,8 @@ public class Percolation {
 
     /**
      * check whether the site is open
-     * @param i row index (0, N-1)
-     * @param j column index (0, N-1)
+     * @param i row index (0, N - 1)
+     * @param j column index (0, N - 1)
      * @return boolean value of indicating whether the site is open
      */
     public boolean isOpen(int i, int j){
@@ -105,14 +107,14 @@ public class Percolation {
 
     /**
      * check whether the site is full
-     * @param i row index (0, N-1)
-     * @param j column index (0, N-1)
+     * @param i row index (1, N)
+     * @param j column index (1, N)
      * @return boolean value of indicating whether the site is full
      */
     public boolean isFull(int i, int j) {
         checkRange(i, j, side);
         return siteMatrix.connected(area, getIndex(i, j));
-    }
+        }
 
     /**
      * check whether the site grid is percolated
@@ -130,7 +132,7 @@ public class Percolation {
      * @return 1 dimensional index for the site of (row i, column j)
      */
     private int getIndex(int i, int j) {
-        return (side * i + j);
+        return side * (i-1) + (j-1);
     }
 
     /**
@@ -143,11 +145,11 @@ public class Percolation {
         Percolation ps = new Percolation(5);
 
         // Artificially make vertically percolated situation.
-        ps.open(0, 1);
-        ps.open(1, 1);
-        ps.open(2, 1);
-        ps.open(3, 1);
-        ps.open(4, 1);
+        ps.open(1, 5);
+        ps.open(2, 5);
+        ps.open(3, 5);
+        ps.open(4, 5);
+        ps.open(5, 5);
 
         StdOut.println(ps.percolates());
     }

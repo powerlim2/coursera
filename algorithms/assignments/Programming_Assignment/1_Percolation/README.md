@@ -15,6 +15,33 @@ In a famous scientific problem, researchers are interested in the following ques
 * Percolation.java
 * PercolationStats.java 
 
+### Result Summary
+
+*  memory usage
+
+-                 N        bytes
+*-------------------------------------------
+=> passed       64        37040         
+=> passed      256       590000         
+=> passed      512      2359472         
+=> passed     1024      9437360         
+
+
+*  executing PercolationStats with reference Percolation
+
+For each N, a percolation object is generated and sites are randomly opened
+until the system percolates. If you do not pass the correctness tests, these
+results may be meaningless.
+
+-                 N   seconds       union()   2 * connected() + find()       constructor
+*--------------------------------------------------------------------------------------------
+=> passed        8     0.00           43                   382                   1         
+=> passed       32     0.01          585                  4612                   1         
+=> passed      128     0.03         9075                 70594                   1         
+=> passed      512     0.11       148553               1156412                   1         
+=> passed     1024     0.25       587689               4558796                   1         
+
+
 
 ### 2 Re-implemented Percolation Data Structure
  

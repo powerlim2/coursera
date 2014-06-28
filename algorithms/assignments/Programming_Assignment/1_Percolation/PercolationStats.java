@@ -22,11 +22,10 @@ public class PercolationStats {
 
         for (int i = 0; i < T; i++) {
             Percolation perc = new Percolation(N);
-            boolean NP = false;
             int count = 0;
             while (!perc.percolates()) {
-                int row = StdRandom.uniform(N);
-                int column = StdRandom.uniform(N);
+                int row = StdRandom.uniform(N) + 1; // [1, N]
+                int column = StdRandom.uniform(N) + 1; // [1, N]
                 if (!perc.isOpen(row, column)) {
                     perc.open(row, column);
                     count++;
@@ -74,7 +73,7 @@ public class PercolationStats {
      */
     private static void checkRange(int N, int T) {
         if (N <= 0 || T <= 0)
-            throw new IndexOutOfBoundsException();
+            throw new IllegalArgumentException("N, T > 0");
     }
 
     /**
