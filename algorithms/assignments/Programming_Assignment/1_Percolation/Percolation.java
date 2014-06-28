@@ -10,7 +10,13 @@ public class Percolation {
     private boolean [] open;
     private int side;
     private int area;
-    private WeightedQuickUnionUF siteMatrix;
+
+    // two UFs to prevent "backwash"
+    // percUF has top and bottom virt sites, uses for "percolates"
+    // fullUF has top virt, but no bottom virt, used for "isFull"
+    private final WeightedQuickUnionUF siteMatrix;
+    private final WeightedQuickUnionUF fullCheck;
+
 
     /**
      * Initialize Percolation data structure
@@ -23,6 +29,7 @@ public class Percolation {
         side = N;
         area = N * N;
         siteMatrix = new WeightedQuickUnionUF(area + 2);
+        fullCheck = new WeightedQuickUnionUF(area + 1); // no bottom virtual site
         open = new boolean[area + 2];
 
         for(int i = 0; i < area; i++){
@@ -38,13 +45,12 @@ public class Percolation {
      * @param j column index (1, N)
      */
     public void open(int i, int j) {
-        checkRange(i, j, side);
+        checkRange(i, j);
         if (isOpen(i, j)) return;
         int site = getIndex(i, j);
 
         open[site] = true;
 
-        // if not top row
         if (i == 1) {
             // connect to top check point in case of top row
             union(site, area);
@@ -52,10 +58,9 @@ public class Percolation {
             union(getIndex(i - 1, j), site);
         }
 
-        // if not bottom row
         if (i == side) {
             // connect to bottom check point in case of bottom row
-            union(site, area + 1);
+            siteUnionOnly(site, area + 1);
         } else if (isOpen(i + 1, j)) { // when i != side
             union(getIndex(i + 1, j), site);
         }
@@ -76,11 +81,11 @@ public class Percolation {
      * Input value check
      * @param i the row index
      * @param j the number of monte carlo trials
-     * @param side length of a dimension of the grid
      */
-    private static void checkRange(int i, int j, int side) {
-        if (i <= 0 || j <= 0 || i > side || j > side)
+    private void checkRange(int i, int j) {
+        if (i <= 0 || j <= 0 || i > side || j > side) {
             throw new IndexOutOfBoundsException();
+        }
     }
 
     /**
@@ -88,10 +93,21 @@ public class Percolation {
      * @param i point 'a'
      * @param j point 'b'
      */
-    private void union(int i, int j) {
+    private void siteUnionOnly(int i, int j) {
         if (!siteMatrix.connected(i, j)) {
             siteMatrix.union(i, j);
         }
+    }
+
+    /**
+     * Connect two points (a and b) in 2 Weighted Quick Union Data Structure:
+     * siteMatix and fullCheck
+     * @param i point 'a'
+     * @param j point 'b'
+     */
+    private void union(int i, int j) {
+        siteMatrix.union(i, j);
+        fullCheck.union(i, j);
     }
 
     /**
@@ -101,20 +117,24 @@ public class Percolation {
      * @return boolean value of indicating whether the site is open
      */
     public boolean isOpen(int i, int j){
-        checkRange(i, j, side);
+        checkRange(i, j);
         return open[getIndex(i, j)];
     }
 
     /**
-     * check whether the site is full
+     * full means from this point do we have a connection to the top virtual
+     * however, once percolation occurs the entire bottom row will be connected
+     * not just the path that we want, this is called "backwash"
+     * to prevent isFull from returning true for backwash sites
+     * ensure any site that is connected ALSO...
      * @param i row index (1, N)
      * @param j column index (1, N)
      * @return boolean value of indicating whether the site is full
      */
     public boolean isFull(int i, int j) {
-        checkRange(i, j, side);
-        return siteMatrix.connected(area, getIndex(i, j));
-        }
+        checkRange(i, j);
+        return fullCheck.connected(area, getIndex(i, j));
+    }
 
     /**
      * check whether the site grid is percolated
