@@ -12,6 +12,8 @@
       <sourceFolder url="file://$MODULE_DIR$/algorithms/Lecture/1_Dynamic_Connectivity" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/algorithms/assignments/Programming_Assignment/1_Percolation" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/algorithms/lib" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/algorithms/Lecture/2_Elementary_Sorts" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/algorithms/Lecture/2_Stack_and_Queues" isTestSource="false" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
