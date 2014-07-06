@@ -14,6 +14,9 @@
       <sourceFolder url="file://$MODULE_DIR$/algorithms/lib" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/algorithms/Lecture/2_Elementary_Sorts" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/algorithms/Lecture/2_Stack_and_Queues" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/algorithms/assignments/Exercises/2_Stacks_and_Queues" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/algorithms/assignments/Exercises/1_Analysis_of_Algorithm" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/algorithms/assignments/Exercises/2_Elementary_Sorts" isTestSource="false" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
