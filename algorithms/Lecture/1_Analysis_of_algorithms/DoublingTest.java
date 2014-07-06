@@ -1,7 +1,7 @@
 /*************************************************************************
  *  Compilation:  javac DoublingTest.java
  *  Execution:    java DoublingTest
- *  Dependencies: ThreeSum.java Stopwatch.java StdRandom.java StdOut.java
+ *  Dependencies: ThreeSum.java StopWatch.java StdRandom.java StdOut.java
  *
  *  % java DoublingTest 
  *      250   0.0

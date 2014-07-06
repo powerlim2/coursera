@@ -2,7 +2,7 @@
  * Monte Carlo Simulation to estimate the optimal percolation threshold.
  * p* (optimal threshold) ~ 0.593
  *
- * Dependencies: Percolation.java, StdStats.java, StdOut.java, Stopwatch.java
+ * Dependencies: Percolation.java, StdStats.java, StdOut.java, StopWatch.java
  * @author Joon Lim
  */
 public class PercolationStats {

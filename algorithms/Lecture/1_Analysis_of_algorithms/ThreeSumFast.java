@@ -1,7 +1,7 @@
 /*************************************************************************
  *  Compilation:  javac ThreeSumFast.java
  *  Execution:    java ThreeSumFast input.txt
- *  Dependencies: StdOut.java In.java Stopwatch.java
+ *  Dependencies: StdOut.java In.java StopWatch.java
  *  Data files:   http://algs4.cs.princeton.edu/14analysis/1Kints.txt
  *                http://algs4.cs.princeton.edu/14analysis/2Kints.txt
  *                http://algs4.cs.princeton.edu/14analysis/4Kints.txt

@@ -1,7 +1,7 @@
 /*************************************************************************
  *  Compilation:  javac DoublingRatio.java
  *  Execution:    java DoublingRatio
- *  Dependencies: ThreeSum.java Stopwatch.java StdRandom.java StdOut.java
+ *  Dependencies: ThreeSum.java StopWatch.java StdRandom.java StdOut.java
  *
  *
  *  % java DoublingRatio

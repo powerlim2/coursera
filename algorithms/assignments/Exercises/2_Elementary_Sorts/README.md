@@ -24,7 +24,9 @@ when insertion sorting the following array:
 
     17 25 42 52 77 91 30 93 75 64
 
+
 Approach:
+
 
 ![Insert](misc/insertion.png)
 
@@ -44,6 +46,7 @@ Give the array that results immediately after the 4-sorting phase
 
 
 Approach:
+
 
 ![Shell](misc/shell.png)
 
