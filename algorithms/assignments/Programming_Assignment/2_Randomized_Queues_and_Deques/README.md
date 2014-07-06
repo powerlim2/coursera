@@ -24,12 +24,18 @@ public class Deque<Item> implements Iterable<Item> {
 }
 ```
 
-Throw a NullPointerException if the client attempts to add a null item; throw a java.util.NoSuchElementException if the client attempts to remove an item from an empty deque; throw an UnsupportedOperationException if the client calls the remove() method in the iterator; throw a java.util.NoSuchElementException if the client calls the next() method in the iterator and there are no more items to return.
-Your deque implementation must support each deque operation in constant worst-case time and use space proportional to the number of items currently in the deque. Additionally, your iterator implementation must support the operations next() and hasNext() (plus construction) in constant worst-case time and use a constant amount of extra space per iterator.
+* Throw a NullPointerException if the client attempts to add a null item.
+* Throw a java.util.NoSuchElementException if the client attempts to remove an item from an empty deque.
+* Throw an UnsupportedOperationException if the client calls the remove() method in the iterator.
+* Throw a java.util.NoSuchElementException if the client calls the next() method in the iterator and there are no more items to return.
+
+Your deque implementation must support each deque operation in constant worst-case time and use space proportional to the number of items currently in the deque. 
+Additionally, your iterator implementation must support the operations next() and hasNext() (plus construction) in constant worst-case time and use a constant amount of extra space per iterator.
 
 ### Randomized queue. 
 
-A randomized queue is similar to a stack or queue, except that the item removed is chosen uniformly at random from items in the data structure. Create a generic data type RandomizedQueue that implements the following API:
+A randomized queue is similar to a stack or queue, except that the item removed is chosen uniformly at random from items in the data structure. 
+Create a generic data type RandomizedQueue that implements the following API:
 
 ```java
 public class RandomizedQueue<Item> implements Iterable<Item> {
@@ -44,9 +50,21 @@ public class RandomizedQueue<Item> implements Iterable<Item> {
 }
 ```
 
-Throw a NullPointerException if the client attempts to add a null item; throw a java.util.NoSuchElementException if the client attempts to sample or dequeue an item from an empty randomized queue; throw an UnsupportedOperationException if the client calls the remove() method in the iterator; throw a java.util.NoSuchElementException if the client calls the next() method in the iterator and there are no more items to return.
-Your randomized queue implementation must support each randomized queue operation (besides creating an iterator) in constant amortized time and use space proportional to the number of items currently in the queue. That is, any sequence of M randomized queue operations (starting from an empty queue) should take at most cM steps in the worst case, for some constant c. Additionally, your iterator implementation must support construction in time linear in the number of items and it must support the operations next() and hasNext() in constant worst-case time; you may use a linear amount of extra memory per iterator. The order of two or more iterators to the same randomized queue should be mutually independent; each iterator must maintain its own random order. 
-Subset client. Write a client program Subset.java that takes a command-line integer k; reads in a sequence of N strings from standard input using StdIn.readString(); and prints out exactly k of them, uniformly at random. Each item from the sequence can be printed out at most once. You may assume that k ≥ 0 and no greater than the number of string N on standard input.
+* Throw a NullPointerException if the client attempts to add a null item.
+* Throw a java.util.NoSuchElementException if the client attempts to sample or dequeue an item from an empty randomized queue.
+* Throw an UnsupportedOperationException if the client calls the remove() method in the iterator.
+* Throw a java.util.NoSuchElementException if the client calls the next() method in the iterator and there are no more items to return.
+
+Your randomized queue implementation must support each randomized queue operation (besides creating an iterator) in constant amortized time and use space proportional to the number of items currently in the queue. 
+That is, any sequence of M randomized queue operations (starting from an empty queue) should take at most cM steps in the worst case, for some constant c. 
+Additionally, your iterator implementation must support construction in time linear in the number of items and it must support the operations next() and hasNext() in constant worst-case time. 
+You may use a linear amount of extra memory per iterator. The order of two or more iterators to the same randomized queue should be mutually independent; each iterator must maintain its own random order. 
+
+### Subset client. 
+
+Write a client program Subset.java that takes a command-line integer k. 
+reads in a sequence of N strings from standard input using StdIn.readString(); and prints out exactly k of them, uniformly at random. 
+Each item from the sequence can be printed out at most once. You may assume that k ≥ 0 and no greater than the number of string N on standard input.
 
 
     % echo A B C D E F G H I | java Subset 3       % echo AA BB BB BB BB BB CC CC | java Subset 8
@@ -60,7 +78,9 @@ Subset client. Write a client program Subset.java that takes a command-line inte
     G                                              BB
 
 
-The running time of Subset must be linear in the size of the input. You may use only a constant amount of memory plus either one Deque or RandomizedQueue object of maximum size at most N, where N is the number of strings on standard input. (For an extra challenge, use only one Deque or RandomizedQueue object of maximum size at most k.) It should have the following API.
+The running time of Subset must be linear in the size of the input. 
+You may use only a constant amount of memory plus either one Deque or RandomizedQueue object of maximum size at most N, where N is the number of strings on standard input. 
+(For an extra challenge, use only one Deque or RandomizedQueue object of maximum size at most k.) It should have the following API.
 
 ``` java
 public class Subset {
