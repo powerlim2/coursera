@@ -1,5 +1,5 @@
-#07.09.2013
-#Author: Joon Lim
+# Date  : 07.09.2013
+# Author: Joon Lim
 
 # insertion sort algorithm
 A = [31, 41, 59, 26, 41, 58]
@@ -22,4 +22,3 @@ A = np.array([31, 41, 59, 26, 41, 58])
 
 A.sort() # quick sort - O(nlogn)
 A.sort(kind='mergesort') # merge sort - O(nlogn)
-

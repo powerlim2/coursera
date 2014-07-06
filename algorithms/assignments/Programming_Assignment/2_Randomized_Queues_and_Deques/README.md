@@ -99,39 +99,42 @@ public class Subset {
 * Why does the following code lead to a generic array creation compile-time error when Item is a generic type parameter?
 
 
+```java
 
-    Item[] a = new Item[1];
-
+Item[] a = new Item[1];
+```
 
 * Java prohibits the creation of arrays of generic types. See the Q+A in Section 1.3 for a brief discussion. Instead, use a cast.
 
 
+```java
 
-    Item[] a = (Item[]) new Object[1];
-
+Item[] a = (Item[]) new Object[1];
+```
     
 * Unfortunately, this leads to an unavoidable compiler warning. The compiler says that my program uses unchecked or unsafe operations and to recompile with -Xlint:unchecked for details. 
     * Usually this means you did a potentially unsafe cast. When implementing a generic stack with an array, this is unavoidable since Java does not allow generic array creation. For example, the compiler outputs the following warning with ResizingArrayStack.java:
 
 
+```shell
 
-    % javac ResizingArrayStack.java
-    Note: ResizingArrayStack.java uses unchecked or unsafe operations.
-    Note: Recompile with -Xlint:unchecked for details.
-    
-    % javac -Xlint:unchecked ResizingArrayStack.java
-    ResizingArrayStack.java:25: warning: [unchecked] unchecked cast
-    found   : java.lang.Object[]
-    required: Item[]
-            a = (Item[]) new Object[2];
-                         ^
-    ResizingArrayStack.java:36: warning: [unchecked] unchecked cast
-    found   : java.lang.Object[]
-    required: Item[]
-            Item[] temp = (Item[]) new Object[capacity];
-                                   ^
-    2 warnings
+% javac ResizingArrayStack.java
+Note: ResizingArrayStack.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
 
+% javac -Xlint:unchecked ResizingArrayStack.java
+ResizingArrayStack.java:25: warning: [unchecked] unchecked cast
+found   : java.lang.Object[]
+required: Item[]
+        a = (Item[]) new Object[2];
+                     ^
+ResizingArrayStack.java:36: warning: [unchecked] unchecked cast
+found   : java.lang.Object[]
+required: Item[]
+        Item[] temp = (Item[]) new Object[capacity];
+                               ^
+2 warnings
+```
 
 You should not make any other casts.
 
