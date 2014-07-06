@@ -28,7 +28,7 @@ when insertion sorting the following array:
 Approach:
 
 
-![Insert](misc/insertion.png)
+![Insert](misc/Insertion.png)
 
 
 ## Question 2
@@ -48,7 +48,7 @@ Give the array that results immediately after the 4-sorting phase
 Approach:
 
 
-![Shell](misc/shell.png)
+![Shell](misc/Shell.png)
 
 ## Question 3
 
