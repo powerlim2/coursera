@@ -124,7 +124,7 @@ public class Subset {
 Item[] a = new Item[1];
 ```
 
-* Java prohibits the creation of arrays of generic types. See the Q+A in Section 1.3 for a brief discussion. Instead, use a cast.
+Java prohibits the creation of arrays of generic types. See the Q+A in Section 1.3 for a brief discussion. Instead, use a cast.
 
 
 ```java
@@ -132,8 +132,8 @@ Item[] a = new Item[1];
 Item[] a = (Item[]) new Object[1];
 ```
     
-* Unfortunately, this leads to an unavoidable compiler warning. The compiler says that my program uses unchecked or unsafe operations and to recompile with -Xlint:unchecked for details. 
-    * Usually this means you did a potentially unsafe cast. When implementing a generic stack with an array, this is unavoidable since Java does not allow generic array creation. For example, the compiler outputs the following warning with ResizingArrayStack.java:
+Unfortunately, this leads to an unavoidable compiler warning. The compiler says that my program uses unchecked or unsafe operations and to recompile with -Xlint:unchecked for details. 
+Usually this means you did a potentially unsafe cast. When implementing a generic stack with an array, this is unavoidable since Java does not allow generic array creation. For example, the compiler outputs the following warning with ResizingArrayStack.java:
 
 
 ```shell
