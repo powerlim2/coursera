@@ -1,4 +1,4 @@
-# [Programming Assignment 2: Randomized Queues and Deques](https://class.coursera.org/algs4partI-005/assignment/view?assignment_id=3)
+# [Programming Assignment 2: Randomized_Queues_and_Deques](https://class.coursera.org/algs4partI-005/assignment/view?assignment_id=3)
 
 
 ## Problem Statement 
