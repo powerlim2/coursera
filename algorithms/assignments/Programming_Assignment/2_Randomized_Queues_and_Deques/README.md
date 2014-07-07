@@ -176,7 +176,6 @@ These are purely suggestions for how you might make progress. You do not have to
 
 1. Make sure you understand the performance requirements for both Deque and RandomizedQueue. They are summarized in the table below. Every detail in these performance requirements is important. Do not proceed until you understand them.
 
-
 |                                   |                Deque                |            randomized Queue         |
 | --------------------------------- |:-----------------------------------:|:-----------------------------------:|
 | Non-iterator operationsconstruct  |     Constant worst-case time        |     Constant amortized time         |
@@ -184,7 +183,6 @@ These are purely suggestions for how you might make progress. You do not have to
 | Other iterator operations         |     Constant worst-case time        |     Constant worst-case time        |
 | Non-iterator memory use           |     Linear in current # of items    |     Linear in current # of items    |
 | Memory per iterator               |     Linear in current # of items    |     Linear in current # of items    |
-
 
 2. Decide whether you want to use an array, linked list, or your own class. This choice should be made based on the performance requirements discussed above. You may make different choices for Deque and RandomizedQueue. You might start by considering why a resizing array does not support constant worst-case time operations in a stack.
 3. Use our example programs as a guide when implementing your methods. There are many new ideas in this programming assignment, including resizing arrays, linked lists, iterators, the foreach keyword, and generics. If you are not familiar with these topics, our example code should make things much easier. ResizingArrayStack.java uses a resizing array; LinkedStack.java uses a singly-linked list. Both examples use iterators, foreach, and generics.
@@ -198,3 +196,18 @@ These are purely suggestions for how you might make progress. You do not have to
 4. Make sure to test that multiple iterators can be used simultaneously. You can test this with a nested foreach loop. The iterators should operate independently of one another.
 5. Don't rely on our automated tests for debugging. You don't have access to the source code of our testing suite, so the Assessment Details may be hard to utilize for debugging. As suggested above, write your own unit tests; it's good practice.
 6. If you use a linked list, consider using a sentinel node (or nodes). Sentinel nodes can simplify your code and prevent bugs. However, they are not required (and we have not provided examples that use sentinel nodes).
+
+
+## Assessment Summary
+
+* Compilation:  PASSED
+* Style:        FAILED
+* Findbugs:     No potential bugs found.
+* API:          PASSED
+
+* Correctness:  35/35 tests passed
+* Memory:       49/49 tests passed
+* Timing:       24/24 tests passed
+
+**Raw score: 100.00%** [Correctness: 65%, Memory: 10%, Timing: 25%, Style: 0%]
+
