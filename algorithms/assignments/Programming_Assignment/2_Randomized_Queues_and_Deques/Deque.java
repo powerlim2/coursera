@@ -52,7 +52,7 @@ public class Deque<Item> implements Iterable<Item> {
         first = null;
         last = null;
         N = 0;
-        assert check();
+//        assert check();
     }
 
     // helper double linked list class

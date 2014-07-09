@@ -18,6 +18,7 @@
       <sourceFolder url="file://$MODULE_DIR$/algorithms/assignments/Exercises/1_Analysis_of_Algorithm" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/algorithms/assignments/Exercises/2_Elementary_Sorts" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/algorithms/assignments/Programming_Assignment/2_Randomized_Queues_and_Deques" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/algorithms/Lecture/3_Mergesort" isTestSource="false" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
