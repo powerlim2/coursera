@@ -70,7 +70,7 @@ Hint: think about algorithm invariants. Do not trace code.
 
 ### Answer
 
-0 1 2 1 2 3
+    0 1 2 1 2 3
 
 
 ## Question 3
