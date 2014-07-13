@@ -13,7 +13,7 @@ Date: 07.08.2014
 
 ### Goal
 
-Given two sorted subarrays `a[lo]` to `a[mid]` and `a[mid+1] to `a[hi]`, replace with sorted subarray `a[lo]` to `a[hi]`.
+Given two sorted subarrays `a[lo]` to `a[mid]` and `a[mid+1]` to `a[hi]`, replace with sorted subarray `a[lo]` to `a[hi]`.
 
 
 ## Merging: Java implementation
