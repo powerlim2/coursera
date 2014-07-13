@@ -209,8 +209,8 @@ private static void sort(Comparable[] a, Comparable[] aux, int lo, int hi) {
 
 Basic Plan
 
-* Pass through array, mergining subarray of size 1.
-* Repaeat for subarrays of size 2,4,8, 16, ....
+* Pass through array, merging subarray of size 1.
+* Repeat for subarrays of size 2, 4, 8, 16, ....
 
 Bottom line: No recursion needed!
 
