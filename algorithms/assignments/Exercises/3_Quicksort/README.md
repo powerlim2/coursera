@@ -28,7 +28,7 @@ Recall, in the standard 2-way partitioning algorithm, the leftmost entry is the 
 
 * Process:
 
-
+```shell
       i   j    0   1   2   3   4   5   6   7   8   9  10  11 
     --------------------------------------------------------
       0  12   51  69  27  66  38  19  79  62  11  37  34  63  
@@ -40,6 +40,7 @@ Recall, in the standard 2-way partitioning algorithm, the leftmost entry is the 
       6   8   51  34  27  37  38  19  11  62  79  66  69  63  
       7   6   11  34  27  37  38  19  51  62  79  66  69  63  
           6   11  34  27  37  38  19  51  62  79  66  69  63  
+```
 
 ## Question 2
 
@@ -55,7 +56,7 @@ algorithm from lecture to the following array:
 
 * Process
 
-
+```shell
      lt   i  gt    0   1   2   3   4   5   6   7   8   9 
     ----------------------------------------------------
       0   0   9   41  41  60  32  10  53  28  41  79  88  
@@ -70,7 +71,7 @@ algorithm from lecture to the following array:
       2   5   5   32  10  41  41  41  28  53  79  88  60  
       3   6   5   32  10  28  41  41  41  53  79  88  60  
       3       5   32  10  28  41  41  41  53  79  88  60  
-
+```
 
 ## Question 3
 
