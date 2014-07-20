@@ -1,4 +1,4 @@
-# Programming Assignment 3: Pattern Recognition
+# [Programming Assignment 3: Pattern_Recognition](http://coursera.cs.princeton.edu/algs4/assignments/collinear.html)
 
 Write a program to recognize line patterns in a given set of points. Computer vision involves analyzing patterns in visual images and reconstructing the real-world objects that produced them. The process in often broken up into two phases: feature detection and pattern recognition. Feature detection involves selecting important features of the image; pattern recognition involves discovering patterns in the features. We will investigate a particularly clean pattern recognition problem involving points and line segments. This kind of pattern recognition arises in many other applications such as statistical data analysis.
 
@@ -119,7 +119,7 @@ Print to standard output the line segments that your program discovers, one per 
 
 
 Also, draw the points using draw() and draw the line segments using drawTo(). Your programs should call draw() once for each point in the input file and it should call drawTo() once for each line segment discovered. Before drawing, use StdDraw.setXscale(0, 32768) and StdDraw.setYscale(0, 32768) to rescale the coordinate system.
-For full credit, do not print permutations of points on a line segment (e.g., if you output p→q→r→s, do not also output either s→r→q→p or p→r→q→s). Also, for full credit in Fast.java, do not print or plot subsegments of a line segment containing 5 or more points (e.g., if you output p→q→r→s→t, do not also output either p→q→s→t or q→r→s→t); you should print out such subsegments in Brute.java.
+*For full credit, do not print permutations of points on a line segment (e.g., if you output p→q→r→s, do not also output either s→r→q→p or p→r→q→s)*. Also, for full credit in Fast.java, *do not print or plot subsegments of a line segment containing 5 or more points (e.g., if you output p→q→r→s→t, do not also output either p→q→s→t or q→r→s→t)*; you should print out such subsegments in Brute.java.
 
 
 ## Deliverables 
@@ -218,3 +218,15 @@ These are purely suggestions for how you might make progress. You do not have to
     * It can grow quadratically as a function of N. Consider the N points of the form: (x, y) for x = 0, 1, 2, and 3 and y = 0, 1, 2, ..., N / 4. This means that if you store all of the (maximal) collinear sets of points, you will need quadratic space in the worst case.
     
 
+## Assessment Summary
+
+* Compilation:  PASSED
+* Style:        FAILED
+* Findbugs:     No potential bugs found.
+* API:          PASSED
+
+* Correctness:  34/36 tests passed
+* Memory:       1/1 tests passed
+* Timing:       17/17 tests passed
+
+**Raw score: 96.39%** [Correctness: 65%, Memory: 10%, Timing: 25%, Style: 0%]

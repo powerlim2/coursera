@@ -23,6 +23,12 @@
       <sourceFolder url="file://$MODULE_DIR$/algorithms/assignments/Exercises/3_Mergesort" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/algorithms/assignments/Exercises/3_Quicksort" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/algorithms/assignments/Programming_Assignment/3_Pattern_Recognition" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/algorithms/Lecture/4_Priority_Queues" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/algorithms/assignments/Exercises/4_Priority_Queue" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/algorithms/Lecture/5_Balanced_Search_Trees" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/algorithms/Lecture/4_Elementary_Symbol_Tables" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/algorithms/Lecture/4_Binary_Search_Trees" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/algorithms/assignments/Exercises/4_Binary_Search_Trees" isTestSource="false" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
