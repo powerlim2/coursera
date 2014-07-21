@@ -250,6 +250,7 @@ public String toString() {
 
 * Here are the contents of our priority queue (sorted by priority) just before dequeueing each node when using the Manhattan priority function on *puzzle04.txt*.
 
+```shell
 
     Step 0:    priority  = 4
                moves     = 0
@@ -290,7 +291,7 @@ public String toString() {
                 1  2  3          1  2  3          1  2  0          1  3  0          1  2  3          4  1  3     
                 4  5  6          0  4  5          4  5  3          4  2  5          4  8  5          0  2  5     
                 7  8  0          7  8  6          7  8  6          7  8  6          7  0  6          7  8  6     
-
+```
 
 There were a total of 10 search nodes enqueued and 5 search nodes dequeued. In general, the number of search nodes enqueued and dequeued may vary slightly, depending the order in which the search nodes with equal priorities come off the priority queue, which depends on the order in which neighbors() returns the neighbors of a board. However, for this input, there are no such ties, so you should have exactly 10 search nodes enqueued and 5 search nodes dequeued.
 
