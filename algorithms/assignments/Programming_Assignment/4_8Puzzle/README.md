@@ -240,15 +240,16 @@ public String toString() {
 
 **Input files.**   The directory [8puzzle](http://coursera.cs.princeton.edu/algs4/testing/8puzzle/) contains many sample puzzle input files. For convenience, [8puzzle-testing.zip](http://coursera.cs.princeton.edu/algs4/testing/8puzzle-testing.zip) contains all of these files bundled together.
 
-* The shortest solution to puzzle[T].txt requires exactly T moves.
-* The shortest solution to puzzle4x4-hard1.txt and puzzle4x4-hard2.txt are 38 and 47, respectively.
-* Warning: puzzle36.txt is especially difficult.
+* The shortest solution to *puzzle[T].txt* requires exactly T moves.
+* The shortest solution to *puzzle4x4-hard1.txt* and *puzzle4x4-hard2.txt* are 38 and 47, respectively.
+* Warning: *puzzle36.txt* is especially difficult.
 
 **Test client.** A good way to automatically run your program on our sample puzzles is to use the client [PuzzleChecker.java](http://coursera.cs.princeton.edu/algs4/checklists/PuzzleChecker.java).
 
 **Priority queue trace.**
 
 * Here are the contents of our priority queue (sorted by priority) just before dequeueing each node when using the Manhattan priority function on *puzzle04.txt*.
+
 
     Step 0:    priority  = 4
                moves     = 0
@@ -299,7 +300,7 @@ There were a total of 10 search nodes enqueued and 5 search nodes dequeued. In g
 
 ### Enrichment
 
-**How can I reduce the amount of memory a Board uses?** For starters, recall that an N-by-N int[][] array in Java uses about 24 + 32N + 4N^2 bytes; when N equals 3, this is 156 bytes. To save memory, consider using an N-by-N char[][] array or a length N^2 char[] array. In principle, each board is a permutation of size N^2, so you need only about lg ((N^2)!) bits to represent it; when N equals 3, this is only 19 bits.
+**How can I reduce the amount of memory a Board uses?** For starters, recall that an N-by-N `int[][]` array in Java uses about 24 + 32N + 4N^2 bytes; when N equals 3, this is 156 bytes. To save memory, consider using an N-by-N `char[][]` array or a length N^2 `char[]` array. In principle, each board is a permutation of size N^2, so you need only about lg ((N^2)!) bits to represent it; when N equals 3, this is only 19 bits.
 
 **Any ways to speed up the algorithm?** One useful trick is to cache the Manhattan distance of a board. That is, maintain an extra instance variable and initialize it the first time that manhattan() is called or when you construct the board; afterwards, just return the cached value.
 
