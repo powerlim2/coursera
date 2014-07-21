@@ -37,7 +37,7 @@ Applications: Event-driven simulation, numerical computation, data compression, 
 
 ```java
 
-MinPQ<Transaction< pq = new MinPQ<Transaction>();   // Transaction data type is Comparable (ordered by $$)
+MinPQ<Transaction> pq = new MinPQ<Transaction>();   // Transaction data type is Comparable (ordered by $$)
 
 while (StdIn.hasNextLine()) {
     String line = StdIn.readLine();
@@ -84,13 +84,14 @@ public class UnorderedMaxPQ<Key extends Comparable<Key>> {
         pq[N++] = x;
     }
     
-    public key delMax() {
+    public key delMax() {           // requires N compares
         int max = 0;
         for (int i = 1; i < N; i++)
             if (less(max, i))       // similar to sorting methods
                 max = i;
         exch(max, N-1);             // similar to sorting methods
         return pq[--N];             // null out entry to prevent loitering
+    }
 }
 ```
 
@@ -132,7 +133,7 @@ Challenge: Implement all operations efficiently
     * Take nodes in level order.
     * No explicit links needed!
 
-** Property propositions**
+**Property propositions**
 
 1. Largest key is a[1], which is root of binary tree.
 2. Can use array indices to move through tree.
@@ -205,17 +206,17 @@ Power struggle: Better subordinate promoted.
 
 ![delete](misc/sink.png)
 
-* Delete max: Exchange root with node at end, then sink it down.
+* Delete max: Exchange root with node at end, then *sink* it down.
 * Cost: At most 2*lg(N) compares.
 
 ```java
 
 public Key delMax() {
     Key max = pq[1];    // max should always be at pq[1]
-    exch(1, N--);
-    sink(1);
+    exch(1, N--);       // exchange top key and bottom key
+    sink(1);            // sink down from top
     pq[N+1] = null;     // prevent loitering
-    return max;
+    return max;         // return the max key, which is deleted
 }
 ```
 
@@ -223,7 +224,7 @@ public Key delMax() {
 
 ```java
 
-public class MaxPq<Key extends Comparable<Key>> {
+public class MaxPQ<Key extends Comparable<Key>> {
     private Key[] pq;
     private int N;
     
@@ -350,7 +351,7 @@ public final class Vector {         // can't override instance methods
         * Simplifies concurrent programming
         * Safe to use as key in priority queue or symbol table
     
-    * disadvantage
+    * Disadvantage
         * Must create new object for each data type value
 
 
@@ -399,6 +400,7 @@ public class Heap {
 ### Heapsort: Mathematical Analysis
 
 **Proposition**: Heap constuction uses <= 2N compares and exchanges.
+
 **Proposition**: Heapsort uses <= 2N*lg(N) compares and exchanges.
 
 **Significance**: In-place sorting algorithm with N*log(N) worst-case.

@@ -106,7 +106,7 @@ public final class Date implements Comparable<Date> {   // typically unsafe to u
 
 ### Equals Design
 
-**"standard" recipe for user-defined types
+**"standard" recipe for user-defined types**
 
 * Optimization for reference equality
 * Check against *null*
@@ -125,7 +125,7 @@ public final class Date implements Comparable<Date> {   // typically unsafe to u
 
 ### ST test client for traces
 
-Build ST by associating value i with ith string from standard input
+Build ST by associating value `i` with ith string from standard input
 
 ```java
 
@@ -196,14 +196,14 @@ Rank helper function: How many keys < k?
 
 ```java
 
-public Value get(key key) {
+public Value get(Key key) {
     if (isEmpty()) return null;
     int i = rank(key);
     if (i < N && keys[i].compareTo(key) == 0) return vals[i];
     else return null;
 }
 
-private int rank(key key) {
+private int rank(Key key) {
     int lo = 0, hi = N - 1;
     while (lo <= hi) {
         int mid = lo + (hi - lo) / 2;

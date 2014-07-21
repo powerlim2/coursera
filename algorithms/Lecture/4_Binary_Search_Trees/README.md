@@ -29,7 +29,7 @@ A Node is comprised of four fields:
 private class Node {
     private Key key;
     private Value val;
-    Private Node left, right;
+    private Node left, right;
     
     public Node(Key key, Value val) {
         this.key = key;
@@ -45,19 +45,19 @@ Key and Value are generic types; Key is Comparable.
 
 ```java
 
-pbulic Value get(Key key) {
+public Value get(Key key) {
     Node x = root;
     while (x != null) {
         int cmp = key.compareTo(x.key);
         if      (cmp < 0) x = x.left;
         else if (cmp > 0) x = x.right;
-        else              return x.val;
+        else              return x.val;     // cmp == 0
     }
     return null;
 }
 ```
 
-Cost: Number of compares is equal to 1 + lg(N) depth of node.
+Cost: Number of compares is equal to **1 + lg(N)**, the depth of node.
 
 
 * Put: Associate value with key
@@ -69,7 +69,7 @@ Cost: Number of compares is equal to 1 + lg(N) depth of node.
 ```java
 
 public void put(Key key, Value val) {
-    root = put(root, key, val);
+    root = put(root, key, val);             // starts from root
 }
 
 private Node put(Node x, Key key, Value val) {
@@ -82,7 +82,7 @@ private Node put(Node x, Key key, Value val) {
 }
 ```
 
-Cost: Number of compares is equal to 1 + lg(N), the depth of node.
+Cost: Number of compares is equal to **1 + lg(N)**, the depth of node.
 
 
 ### Tree Shape
@@ -97,11 +97,11 @@ Cost: Number of compares is equal to 1 + lg(N), the depth of node.
 
 ### Mathematical Analysis
 
-Proposition: If `N` distinct keys are inserted into BST in random order, the expected number of compares for a search / insert is ~ 2 ln(N).
+Proposition: If `N` distinct keys are inserted into BST *in random order*, the expected number of compares for a search / insert is ~ **2 ln(N)**.
 Pf. 1-1 correspondence with quicksort partitioning.
 
-Proposition. [Reed, 2003] If `N` distinct keys are inserted in random order, expected height of tree is ~4.311*ln(N).
-But.. Worst-case height is **N**. (exponentially samll chance when keys are inserted in random order)
+Proposition. [Reed, 2003] If `N` distinct keys are inserted *in random order*, expected height of tree is **~4.311*ln(N)**.
+But.. Worst-case height is **N**. (exponentially small chance when keys are inserted in random order)
 
 ![sum](misc/bst_sum.png)
 
@@ -123,9 +123,9 @@ But.. Worst-case height is **N**. (exponentially samll chance when keys are inse
 
 ### Computing the floor
 
-Case 1: The floor of k is k. (k equals the key at root)
-Case 2: The floor of k is in the left subtree. (k is less than the key at root)
-Case 3: The floor of k is in the right subtree (if there is any key <= k in right subtree), otherwise it is the key in the root.
+* Case 1: The floor of k is k. (k equals the key at root)
+* Case 2: The floor of k is in the left subtree. (k is less than the key at root)
+* Case 3: The floor of k is in the right subtree (if there is any key <= k in right subtree), otherwise it is the key in the root.
 
 ![flow](misc/floorflow.png)
 
@@ -143,7 +143,7 @@ private Node floor(Node x, Key key) {
     int cmp = key.compareTo(x.key);
     
     if (cmp == 0) return x;
-    if (cmp < 0) return floor(x.left, key);
+    if (cmp  < 0) return floor(x.left, key);
     
     Node t = floor(x.right, key);
     if (t != null) return t;
@@ -163,10 +163,10 @@ Remark: This facilitates efficient implementation of `rank()` and `select()`.
 
 private class Node {
     private Key key;
-    Private Value val;
-    Private Node left;
-    Private Node right;
-    Private int count;      // number of nodes in subtree
+    private Value val;
+    private Node left;
+    private Node right;
+    private int count;      // number of nodes in subtree
 }
 
 public int size() {
@@ -272,7 +272,7 @@ To delete the minimum key:
 ```java
 
 public void deleteMin() {
-    roo = deleteMin(root);
+    root = deleteMin(root);
 }
 
 private Node deleteMin(Node x) {
@@ -287,15 +287,15 @@ private Node deleteMin(Node x) {
 
 To delete a node with key k: search for node t containing key k.
 
-Case 1: [0 children] Delete t by setting parent link to null.
+**Case 1**: [0 children] Delete t by setting parent link to null.
 
 ![case1](misc/hc1.png)
 
-Case 2: [1 child] Delete t by replacing parent link.
+**Case 2**: [1 child] Delete t by replacing parent link.
 
 ![case2](misc/hc2.png)
 
-Case 3: [2 children]
+**Case 3**: [2 children]
 
 * Find successor x of t.                        // x has no left child
 * Delete the minimum in t's right subtree       // but don't garbage collect x
@@ -318,7 +318,7 @@ private Node delete(Node x, Key key) {
     else if (cmp > 0) x.right = delete(x.right, key);
     else {
         if (x.right == null) return x.left;             // no right child
-        if (x.left == null) return x.right;             // no left child
+        if (x.left  == null) return x.right;            // no left child
         
         Node t = x;
         x = min(t.right);                               // replace with successor
@@ -332,9 +332,9 @@ private Node delete(Node x, Key key) {
 
 ### Hibbard Deletion: Analysis
 
-Unsatisfaction solution: Not Symmetric.
-Surprising consequence: Trees not random (!) -> sqrt(N) per op.
-Longstanding open problem: Simple and efficient delete for BSTs.
+* Unsatisfaction solution: Not Symmetric.
+* Surprising consequence: Trees not random (!) -> sqrt(N) per op.
+* Longstanding open problem: Simple and efficient delete for BSTs.
 
 ![summ](misc/su.png)
 
