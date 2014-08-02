@@ -1,6 +1,7 @@
-import java.util.ArrayList;
+package java;
+
 import java.util.Arrays;
-import java.util.List;
+
 /**
  * Created with IntelliJ IDEA.
  * User: joonhyunglim

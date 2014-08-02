@@ -110,11 +110,11 @@ Challenge: Implement all operations efficiently
 ## Binary Heaps
 
 
-### Complete Binary Tree
+### Complete Binary java.Tree
 
 ![btree](misc/btree.png)
 
-* Binary Tree: Empty or node with links to left and right binary trees.
+* Binary java.Tree: Empty or node with links to left and right binary trees.
 * Complete tree: Perfectly balanced, except for bottom level.
 * Property: Height of complete tree with N nodes is `lg N`.
     * Pf. Height only increases when N is a power of 2.

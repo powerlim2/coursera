@@ -85,14 +85,14 @@ private Node put(Node x, Key key, Value val) {
 Cost: Number of compares is equal to **1 + lg(N)**, the depth of node.
 
 
-### Tree Shape
+### java.Tree Shape
 
 * Many BSTs correspond to same set of keys.
 * Number of compares for search / insert is equal to 1 + lg(N), the depth of node.
 
 ![shapes](misc/shapes.png)
 
-**Remark: Tree shape depends on order of insertion.**
+**Remark: java.Tree shape depends on order of insertion.**
 
 
 ### Mathematical Analysis

@@ -257,7 +257,7 @@ public class MergeBU {
 * Optimal algorithm: ?
 
 
-### Decision Tree (for 3 distinct items a,b, and c)
+### Decision java.Tree (for 3 distinct items a,b, and c)
 
 ![comp](misc/comp.png)
 

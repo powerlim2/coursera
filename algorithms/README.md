@@ -30,7 +30,7 @@ This place is the repository for the course.
 - **Searching**: BST, red-black BST, hash table.
 - **Graphs**: BFS, DFS, Orun, kruskal, Dijkstra.
 - **Strings**: KMP, Regex, TST, Huffman, LZW.
-- **Advanced**: Binary Tree, Suffix Array, Maxflow.
+- **Advanced**: Binary java.Tree, Suffix Array, Maxflow.
 
 ## Folders
 
