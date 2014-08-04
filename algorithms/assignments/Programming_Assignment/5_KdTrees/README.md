@@ -97,7 +97,7 @@ You may use the following interactive client programs to test and debug your cod
 * RangeSearchVisualizer.java reads a sequence of points from a file (specified as a command-line argument) and inserts those points into a 2d-tree. Then, it performs range searches on the axis-aligned rectangles dragged by the user in the standard drawing window.
 * NearestNeighborVisualizer.java reads a sequence of points from a file (specified as a command-line argument) and inserts those points into a 2d-tree. Then, it performs nearest neighbor queries on the point corresponding to the location of the mouse in the standard drawing window.
 
-## Analysis of running time and memory usage (optional and not graded). 
+## Analysis of running time and memory usage 
 
 * Give the total memory usage in bytes (using tilde notation) of your 2d-tree data structure as a function of the number of points N, using the memory-cost model from lecture and Section 1.4 of the textbook. Count all memory that is used by your 2d-tree, including memory for the nodes, points, and rectangles.
 * Give the expected running time in seconds (using tilde notation) to build a 2d-tree on N random points in the unit square. (Do not count the time to read in the points from standard input.)
