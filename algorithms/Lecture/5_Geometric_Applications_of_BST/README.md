@@ -76,7 +76,6 @@ Given `N` horizontal and vertical line segments, find all intersections.
     * Pf.
 
 ```shell
-
         Put x-coordinates on PQ (or sort).    // N log(N)
         Insert y-coordinates into BST.        // N log(N)
         Delete y-coordinates from BST.        // N log(N)
@@ -305,7 +304,6 @@ return null;
 
 
 ```shell
-
         Put x-coordinates on a PQ ( or sort).     // N log(N)
         Insert y-intervals into ST.               // N log(N)
         Delete y-intervals from ST.               // N log(N)

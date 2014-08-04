@@ -32,6 +32,9 @@
       <sourceFolder url="file://$MODULE_DIR$/algorithms/assignments/Programming_Assignment/4_8Puzzle" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/algorithms/funstuffs" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/algorithms/Lecture/5_Geometric_Applications_of_BST" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/algorithms/assignments/Exercises/5_Balanced_Search_Trees" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/algorithms/assignments/Exercises/5_Geometric_Searching_Applications_of_BSTs" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/algorithms/assignments/Programming_Assignment/5_KdTrees" isTestSource="false" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />

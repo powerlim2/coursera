@@ -1,7 +1,7 @@
 /**
  * Quick illustration of a two-dimensional tree.
  */
-public class KdTree<AnyType extends Comparable<? super AnyType>>
+public class MyKdTree<AnyType extends Comparable<? super AnyType>>
 {
     @SuppressWarnings("unchecked")
     private static class KdNode<AnyType>
@@ -21,7 +21,7 @@ public class KdTree<AnyType extends Comparable<? super AnyType>>
 
     private KdNode<AnyType> root;
 
-    public KdTree( )
+    public MyKdTree( )
     {
         root = null;
     }
@@ -73,7 +73,7 @@ public class KdTree<AnyType extends Comparable<? super AnyType>>
 
     public static void main( String [ ] args )
     {
-        KdTree<Integer> t = new KdTree<Integer>( );
+        MyKdTree<Integer> t = new MyKdTree<Integer>( );
 
         System.out.println( "Starting program" );
         for( int i = 300; i < 370; i++ )

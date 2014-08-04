@@ -178,18 +178,18 @@ private void flipColors(Node h) {
 }
 ```
 
-### Insertion in a LLBR tree: Overview
+### Insertion in a LLRB tree: Overview
 
 * Basic Strategy: Maintain 1-1 correspondence with 2-3 trees by applying elementary red-black BST operations.
 
-* Warm up 1. Insert into a tree with exactly 1 noe.
-* Case 1. Insert into a 2-node at the bottom.
+* **Warm up 1.** Insert into a tree with exactly 1 node.
+* **Case 1.** Insert into a 2-node at the bottom.
     * Do standard BST insert; Color new link red.
     * If new red link is a right link, rotate left.
 
 
-* Warm up 2. Insert into a tree with exactly 2 nodes.
-* Case 2. Insert into a 3-node at the bottom.
+* **Warm up 2.** Insert into a tree with exactly 2 nodes.
+* **Case 2.** Insert into a 3-node at the bottom.
     * Do standard BST insert; Color new link red.
     * Rotate to balance the 4-node (if needed).
     * Flip colors to pass red link up one level.
@@ -214,9 +214,9 @@ private Node put(Node h, Key key, Value val) {
 
     if  (h = null) return new Node(key, val, RED);                   // insert at bottom (and color it red)
     int cmp = key.compareTo(h.key);
-    if      (cmp < 0) h.left = put(h.left, key, val);
+    if      (cmp < 0) h.left  = put(h.left, key, val);
     else if (cmp > 0) h.right = put(h.right, key, val);
-    else              h.val = val;
+    else              h.val   = val;
     
     // only a few extra lines of code provides near-perfect balance
     if (isRed(h.right) && !isRed(h.left))      h = rotateLeft(h);    // lean left
