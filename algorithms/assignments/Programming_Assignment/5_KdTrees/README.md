@@ -152,7 +152,7 @@ Starting with circle10k.txt if nearest is called with p = (.81, .30) the number 
 
 These are purely suggestions for how you might make progress. You do not have to follow these steps.
 
-1. Node data type. 
+* **1 Node data type**:
     * There are several reasonable ways to represent a node in a 2d-tree. One approach is to include the point, a link to the left/bottom subtree, a link to the right/top subtree, and an axis-aligned rectangle corresponding to the node.
 ```java
 private static class Node {
@@ -164,8 +164,8 @@ private static class Node {
 ```
 Unlike the Node class for BST, this Node class is static because it does not refer to a generic Key or Value type that depends on the object associated with the outer class. This saves the 8-byte inner class object overhead. Also, since we don't need to implement the rank and select operations, there is no need to store the subtree size.
 
-2. Writing KdTree. 
-* Start by writing isEmpty() and size(). These should be very easy. From there, write a simplified version of insert() which does everything except set up the RectHV for each node. Write the contains() method, and use this to test that insert() was implemented properly. Note that insert() and contains() are best implemented by using private helper methods analogous to those found on page 399 of the book or by looking at BST.java. We recommend using orientation as an argument to these helper methods.
+* **2 Writing KdTree**:
+    * Start by writing isEmpty() and size(). These should be very easy. From there, write a simplified version of insert() which does everything except set up the RectHV for each node. Write the contains() method, and use this to test that insert() was implemented properly. Note that insert() and contains() are best implemented by using private helper methods analogous to those found on page 399 of the book or by looking at BST.java. We recommend using orientation as an argument to these helper methods.
 Now add the code to insert() which sets up the RectHV for each Node. Next, write draw(), and use this to test these rectangles. Finish up KdTree with the nearest and range methods. Finally, test your implementation using our interactive client programs as well as any other tests you'd like to conduct.
 
 ## Optimizations
