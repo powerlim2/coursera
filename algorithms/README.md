@@ -28,6 +28,9 @@ This place is the repository for the course.
 - **Data Types**: stack, queue, bag, union-find, priority queue.
 - **Sorting**: quicksort, mergesort, heapsort, radix sort.
 - **Searching**: BST, red-black BST, hash table.
+
+## Topics covered in Part II
+
 - **Graphs**: BFS, DFS, Orun, kruskal, Dijkstra.
 - **Strings**: KMP, Regex, TST, Huffman, LZW.
 - **Advanced**: Binary java.Tree, Suffix Array, Maxflow.
