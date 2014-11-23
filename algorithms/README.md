@@ -1,8 +1,6 @@
 # [Introduction to Algorithms & Data Structures](https://class.coursera.org/algs4partI-005)
 
 
-** Date: 2014.06.18 ~ **
-
 A couple of weeks ago, I decided to take algorithm courses offered from Princeton University through Coursera.
 This place is the repository for the course.
 

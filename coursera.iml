@@ -37,6 +37,7 @@
       <sourceFolder url="file://$MODULE_DIR$/algorithms/assignments/Programming_Assignment/5_KdTrees" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/algorithms/Lecture/6_Hash_Table" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Epidemiological_Study/Lecture/1_Measures_of_Disease_Frequency" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Epidemiological_Study/Quiz/1_Measures_of_Disease_Frequency" isTestSource="false" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
