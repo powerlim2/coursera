@@ -195,13 +195,13 @@ private int hash(Key key) {
 
 ### Uniform Hashing Assumption
 
-* Uniform Hashing Assumption: Each eky is equally likely to hash to an integer between 0 and M-1.
+* Uniform Hashing Assumption: Each key is equally likely to hash to an integer between 0 and M-1.
 * Bins and Balls: Throw balls uniformly at random into M bins.
 
 ![bb](misc/binsballs.png)
 
-* Birthday problem: Experect two balls in the same bin after `~ sqrt(pi * M / 2)` tosses.
-* Coupon collector: Expect every bin has >= 1 ball after `~ Mln(M)` tosses.
+* Birthday problem: Expect two balls in the same bin after `~ sqrt(pi * M / 2)` tosses.
+* Coupon collector: Expect every bin has >= 1 ball after `~ Mlog(M)` tosses.
 * Load Balancing: After M tosses, expect most loaded bin has `theta(log(M) / log(log(M)))` balls.
 
 
@@ -437,9 +437,12 @@ public class WhiteList {
         }
     }
 }
+```
 
 * Read in a list of words from one file.
 * Print out all words from standard input that are NOT in the list.
+
+```java
 
 public class BlackList {
     public static void main(String[] args) {
