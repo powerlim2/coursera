@@ -17,7 +17,7 @@ I am glad that I found this course offer from UNC through Coursera and I decided
 * Video Lectures
 
 
-## Topics covered in the course
+## [Topics covered in the course](https://github.com/powerlim2/coursera/tree/master/Epidemiological_Study/Lecture)
 
 - **Understanding Measures of Disease Frequency**: Prevalence, Incidence, Risks, Rates, Odds.
 - **Experimental Study Design**: Cohort, Case-Control (nested), Cross-Sectional, Ecologic studies.
