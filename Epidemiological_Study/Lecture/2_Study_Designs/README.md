@@ -126,7 +126,7 @@ Characteristics:
     5. Loss to follow up
 
 
-## 2 Case Control Study Design
+### 2 Case Control Study Design
 
 ![CC](misc/casecontrol.jpg)
 
@@ -177,28 +177,55 @@ Characteristics:
 - Matching may be by sex, age, race, etc.
 
 
-- Summary
-    - Advantages:
-        1. Good for rare outcomes
-        2. Take less time
-        3. Use fewer resources and $
-        4. CAn examine multiple exposures
-        5. Likely to be replicable in other populations
-        6. If sampled accurately, odds ratio provides estimate of risk or rate ratio
+**Summary**
 
-    - Disadvantages:
-        1. Some possible biases in selection or subjects, measurement of exposures, and analysis
-        2. No direct estimate proxy for risk or rate ratio
-        3. Not good for rare exposures
-        4. Sometimes time sequence between exposure and outcome is uncertain
+- Advantages:
+    1. Good for rare outcomes
+    2. Take less time
+    3. Use fewer resources and $
+    4. CAn examine multiple exposures
+    5. Likely to be replicable in other populations
+    6. If sampled accurately, odds ratio provides estimate of risk or rate ratio
+
+- Disadvantages:
+    1. Some possible biases in selection or subjects, measurement of exposures, and analysis
+    2. No direct estimate proxy for risk or rate ratio
+    3. Not good for rare exposures
+    4. Sometimes time sequence between exposure and outcome is uncertain
 
 
 ### 3 Cross-Sectional Study Design
 
 ![Cross](misc/Cross.png)
 
+Characteristics:
+    - Exposure and outcome are assessed at the same time.
+    - **Snap shot** of exposure and outcome at one point of time.
+    - Describe the occurrence of health outcome or exposure in a population.
+    - Measure used to describe the occurrence is prevalence.
 
 
+Ways to use cross-sectional studies
+    - Characterize the prevalence of a health outcome in a specified population, in a defined period of time.
+    - Obtain data on the prevalence of exposure and the health outcome.
 
-* ecologic study
+![Design](misc/CrossDesign.png)
+
+Prevalence = Rate * Average Duration
+
+
+Limitations:
+    1. Prevalence is influenced by the (incidence) rate and duration of a health outcome.
+    2. Antecedent-consequent bias (Chicken vs. egg)
+    3. Cannot be sure that the exposure preceded the disease.
+
+When to use *Cross-Sectional* Studies?
+    - Estimating occurrence of risk factors, or health outcomes in a population.
+    - Surveillance of changes in behavioral risk factors, and long-lasting diseases.
+    - Obtaining data on the prevalence of exposure and the outcome
+
+
+### 4 Ecologic Study Design
+
+
 
