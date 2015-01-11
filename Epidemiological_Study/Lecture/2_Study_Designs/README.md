@@ -5,6 +5,8 @@ Date: 01.10.2015
 
 ## Experimental Study Designs
 
+![ES](misc/ES.png)
+
 Characteristics:
 * Investigator generally determines who's getting the intervention and who's not getting the intervention.
 * Investigator randomly **assigns** exposure
@@ -77,14 +79,126 @@ Characteristics:
 * Used when it's not ethical to random assign exposure to participants.
 
 
-### Cohort Study
+### 1 Cohort Study Design
 
-- Cohort: a group of persons sharing a common characteristic
+![Cohort](misc/Cohort.jpg)
+
+- Cohort: a group of persons sharing a common characteristic such as geographical locations, socioeconomic status, age, gender, occupation and race.
+- Source population: identify the eligible participants. Outcome must not be present at baseline. Participants must be free of the outcome to support a causal relationship.
+- Basics:
+
+![CSB](misc/CSB.png)
+
+- Example: Smoking
+- Common measure: Risk or Rate
+
+![CM](misc/CM.png)
+
+**Open vs. Close study**
+
+- Open Study Population: 
+    - Join at any point, within limitations
+    - Person-Time
+    - Less prone to problems with sample size
+    
+- Close Study Population: 
+    - closed to new participants
+
+
+**Retrospective vs. Prospective**
+
+![RP](misc/RP.png)
+
+- Retrospective study design is used to evaluate occupational exposures such as cancers and other chronic diseases.
+
+
+- Advantages:
+    1. Directly estimate rates and risks
+    2. Good for rare exposures
+    3. Good for multiple outcomes
+    4. Provides evidence of temporality between exposure and outcome
+    
+- Disadvantage:
+    1. Expensive
+    2. Time-consuming
+    3. Resource-intensive
+    4. Inefficient for rare outcomes
+    5. Loss to follow up
+
+
+## 2 Case Control Study Design
+
+![CC](misc/casecontrol.jpg)
+
+Characteristics:
+- The case-control study aims at achieving the same goals (comparison of exposed and unexposed) as cohort study but does so more efficiently, by use of sampling.
+- Efficient method to study rare diseases
+- Retrospective
+- case: a group of participants with the outcome
+- control: a group of participants without the outcome
+
+![cctime](misc/cctime.png)
+
+- Key steps:
+    1. Define and select cases
+        - determine diagnostic criteria
+        - Incident vases are preferable over prevalent cases
+        
+    2. Define and select controls
+        - Multiple controls per case (statistical power)
+        - Multiple control groups (consistency = credibility)
+        
+    3. Compare exposure prevalence
+        - Use odds ratio: Odds of exposure for cases over Odds of exposure for controls
+        - Do not directly measure the risk or rate of an outcome.
+
+
+![Ctree](misc/Ctree.png)
+
+
+- When to use a **case-control** study?
+    1. When the disease is rare
+        - Example: studying risk factor for birth defects
+    
+    2. When exposure data are expensive or difficult to obtain
+        - Example: Lab tests for pesticides in blood
+    
+    3. When disease has a long induction and latent period
+        - Example: Cancer, cardiovascular disease
+    
+    4. When little is known about the disease
+        - Example: Early studies of AIDS
+
+**Matching**
+
+![matching](misc/matching.png)
+
+- Matching is used for one or two strong risk factors.
+- Matching may be by sex, age, race, etc.
+
+
+- Summary
+    - Advantages:
+        1. Good for rare outcomes
+        2. Take less time
+        3. Use fewer resources and $
+        4. CAn examine multiple exposures
+        5. Likely to be replicable in other populations
+        6. If sampled accurately, odds ratio provides estimate of risk or rate ratio
+
+    - Disadvantages:
+        1. Some possible biases in selection or subjects, measurement of exposures, and analysis
+        2. No direct estimate proxy for risk or rate ratio
+        3. Not good for rare exposures
+        4. Sometimes time sequence between exposure and outcome is uncertain
+
+
+### 3 Cross-Sectional Study Design
+
+![Cross](misc/Cross.png)
 
 
 
 
-* case-control study
 * ecologic study
-* cross-sectional study
 
