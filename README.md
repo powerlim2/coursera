@@ -8,14 +8,14 @@ Course Works
 * Textbook: [Algorithms 4th edition](http://algs4.cs.princeton.edu/home)
 * [Java Programs in the textbook](http://introcs.cs.princeton.edu/java/code/)
 * [Algorithm codes in the textbook](http://algs4.cs.princeton.edu/code/)
-* How I applied Algorithms to my business projects:
+* **How I apply Algorithms at work**:
     1. Web Scrapping:
         * Effectively download and parse publicly available data such as Community Forum RSS feeds, Verizon reviews, 
           Amazon reviews, Google Playstore reviews, Tweets etc.
         
 
 
-## Epidemiology: The Basic Science of Public Health
+## Epidemiology
 
 * School: **The University of North Carolina at Chapel Hill**
 * Professor: Lorraine Alexander and Karin Yeatts
@@ -26,7 +26,7 @@ Course Works
     * Quasi-Experimental Study Design
     * Effectively managing confounding risks
     * Causal Inference with a lack the element of random assignment to treatment or control
-* How I applied Epidemiological study to my business Projects:
+* **How I apply Epidemiological study at work**:
     1. Internet of Things (IoT):
         * Identifying risk factors for consumer returns: remorse return and warranty return.
         * Quantifying the strength of association between stability crashes, battery, camera, network connectivity, etc 
@@ -34,3 +34,4 @@ Course Works
         * Especially attractive when finding and understanding events that negatively impact on consumer since it's.
           morally unacceptable to purposely impose a negative service to consumer for experimentation purposes.
         * E.g. Smartphone, Wearable, Smarthome, Driverless cars, etc.
+
