@@ -196,7 +196,7 @@ Characteristics:
 
 ### 3 Cross-Sectional Study Design
 
-![Cross](misc/Cross.png)
+![Cross](misc/cross.png)
 
 Characteristics:
     - Exposure and outcome are assessed at the same time.
