@@ -229,5 +229,36 @@ When to use *Cross-Sectional* Studies?
 
 ### 4 Ecologic Study Design
 
+**Ecologic vs. Cohort, Case-Control, Cross-Sectional**
+
+- Measurement at group level, not an individual level
+    - Group Level data:
+        - Average exposure of the group, not individuals.
+        - Know an outcome of group but don't know exposures of individuals who became diseased and those who did not.
+    - Individual Level Data:
+        - Provides information on exposures of each individual.
+        - Able to link individual exposures to those who became diseased and those who did not.
+        
+- Ecologic Fallacy: Concluding that an association between exposure and the outcome at group level is true at individual level.
 
 
+**Example Study Questions:**
+
+1. Is the ranking of cities by air pollution levels associated with the ranking of cities by mortality from cardiovascular disease,
+adjusting for differences in average age, percent below poverty level, occupation?
+2. Have seat belt laws made a difference in motor vehicle fatality rates, comparing years before and after laws were passed?
+
+
+**Summary**
+
+- Advantages:
+    1. Group level data is publicly available
+    2. Lower cost. Convenient
+    3. Useful for evaluating impact of community level interventions
+    4. Maximize exposure differences between communities
+    5. Studying effects of short-term variants in exposure within the same community.
+
+- Disadvantages:
+    1. Ecologic Fallacy
+    2. Not confident at identifying if exposure precedes outcome.
+    3. Migration can bias interpretation of data.
