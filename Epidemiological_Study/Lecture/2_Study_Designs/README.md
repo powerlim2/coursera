@@ -50,6 +50,7 @@ Characteristics:
 ### Blinding
 
 **Types:**
+
 1. Non-blinded: 
     - Subject: Not blinded, Researcher: Not blinded, Analyst: Not blinded
 2. Single-blinded
